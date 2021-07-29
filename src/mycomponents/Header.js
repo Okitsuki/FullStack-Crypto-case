@@ -1,23 +1,22 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import "./Heder.css"//this is how to add style sheet in react
+import "./mystyling/Heder.css"//this is how to add style sheet in react
 import { Link } from 'react-router-dom'
 export default function Header(props) {
     return (
-        <div>
+        <div className = "Header">
              <h1>{props.title}</h1>
              <ul>
-                 <li><Link to="/">Home</Link></li>
-                 <li><Link to="/About">About</Link></li>
+                 <li><Link className = "page" to="/">Home</Link></li>
+                 <li><Link className = "page" to="/About">About</Link></li>
+                 <li><Link className = "page" to="/About">Services</Link></li>
+                 <li><Link className = "page" to="/About">Contact us</Link></li>
              </ul>
-             {props.para ?
-             <p className = "red">This is very Good</p>: <p className = "red">props true/false testing by me</p>
-            }
         </div>
     )
 }
 Header.defaultProps = {
-    title : "Your Title Here"// If title not given thi will show
+    title : "Your Title Here"// If title not given this will show
 }
 Header.propTypes = {
     title : PropTypes.string,// With this I can't enter anything but string in the title portion

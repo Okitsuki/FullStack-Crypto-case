@@ -1,0 +1,8 @@
+.container{
+    box-sizing: border-box;
+    margin: 70px 10px;
+   
+}
+.todohead{
+    text-align:center;
+}

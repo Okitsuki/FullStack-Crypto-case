@@ -3,7 +3,6 @@ import Header from "./mycomponents/Header";
 import Todos from "./mycomponents/Todos";
 import Footer from "./mycomponents/Footer";
 import Addtodo from "./mycomponents/Addtodo";
-import About from "./mycomponents/About";
 import React, { useState , useEffect} from 'react';
 import {
   BrowserRouter as Router,
@@ -20,8 +19,6 @@ function App() {
   }
   const [todos,setTodos] = useState (intodos);
   function addtodo(title,desc){
-    console.log("This is title:",title);
-    console.log("This is desc:",desc);
     let sno;
     if(todos.length !== 0){
      sno = todos[todos.length -1].sno + 1;
@@ -59,11 +56,9 @@ function App() {
    return (
     <div className="App">
       <Router>
-      <Header title = "My First React.JS App" para = {false} />
+      <Header title = "Todo's List"/>
       <Switch>
-          <Route path="/about">
-            <About/>
-          </Route>
+          
           <Route exact path="/" render ={()=>{
             return (
               <>

@@ -1,0 +1,32 @@
+.adderbox{
+    border: 2px solid black;
+    margin: 20px auto;
+    width: 400px;
+    height: 300px;
+    border-radius: 15px;
+}
+.adderbox h2{
+    margin: 10px auto;
+    text-align: center;
+}
+.adder{
+ margin: 15px;
+}
+.adder input{
+    margin: 5px;
+    padding: 5px ;
+}
+.adder textarea{
+    margin: 10px 5px;
+}
+.adder button{
+    margin: 10px auto;
+    position: absolute;
+    left: 47%;
+    padding: 10px 16px;
+    background-color:#4CAF50;
+    color: white;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+}

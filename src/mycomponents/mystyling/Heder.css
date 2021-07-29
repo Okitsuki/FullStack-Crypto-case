@@ -1,0 +1,37 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.Header ul{
+    display: flex;
+    margin: auto 5px;
+}
+.Header{
+    display: flex;
+    border: 2px solid black;
+    border-radius: 15px;
+    width: 95vw;
+    margin:  6px auto;
+    background-color: #ff5500;
+}
+.Header ul li{
+    list-style: none;
+    text-align: center;
+}
+.page{
+    text-decoration: none;
+    margin: 5px 5px;
+    padding: 10px 18px;
+    color: black;
+    
+
+}
+.page:hover{
+    text-decoration: underline;
+    color: blanchedalmond;
+}
+.Header h1{
+   margin: 5px  20px;
+   font-family: Arial, Helvetica, sans-serif;
+}

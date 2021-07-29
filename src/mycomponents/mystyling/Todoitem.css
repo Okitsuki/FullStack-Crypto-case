@@ -1,0 +1,24 @@
+.todo-item{
+    border: 2px solid black;
+    box-sizing: border-box;
+    margin: 20px 15px;
+    border-radius: 15px;
+    background-color: cyan;
+}
+#todo-name{
+    text-align: center;
+}
+#todo-delete{
+    position: relative;
+    left: 50%;
+    padding: 10px 16px;
+    margin: 20px 0px;
+    background-color:crimson;
+    color: white;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+}
+.todo-detail{
+    margin: 15px 20px;
+}
